@@ -39,6 +39,6 @@ class CreatePlanetsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('planets');
     }
 }
