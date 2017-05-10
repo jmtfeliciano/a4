@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use App\Planet;
+
 class PlanetsTableSeeder extends Seeder
 {
     /**
@@ -11,6 +13,16 @@ class PlanetsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+          Book::insert([
+               'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+               'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+               'name' => 'Earth',
+          ]);
+
+          Book::insert([
+               'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+               'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+               'name' => 'Mercury',
+          ]);
     }
 }
