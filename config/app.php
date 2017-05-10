@@ -177,6 +177,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        //THIS IS TO ...  Adding the required debugbar for local production
+        Barryvdh\Debugbar\ServiceProvider::class,
+
+
     ],
 
     /*
@@ -225,6 +230,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+
+        //THIS IS TO ...  Adding the required debugbar for local production
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 
