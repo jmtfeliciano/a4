@@ -16,15 +16,32 @@ class PlanetsTableSeeder extends Seeder
           Planet::insert([
                'created_at' => Carbon\Carbon::now()->toDateTimeString(),
                'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-               'name' => 'Earth',
-               'mass' => 2,
+               'name' => 'Pluto',
+               'galaxies_name' => 'MilkyWay'
           ]);
 
           Planet::insert([
                'created_at' => Carbon\Carbon::now()->toDateTimeString(),
                'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-               'name' => 'Mars',
-               'mass' => 4,
+               'name' => 'Earth',
+               'galaxies_name' => 'MilkyWay'
           ]);
+
+          Planet::insert([
+               'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+               'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+               'name' => 'KELT1b',
+               'galaxies_name' => 'Andromeda'
+          ]);
+
+
+
+
+
+
+
+
+          }
+
+
     }
-}

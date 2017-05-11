@@ -26,6 +26,8 @@ class CreatePlanetsTable extends Migration
 
      		# The rest of the fields...
      		$table->string('name');
+               $table->string('galaxies_name');
+
 
      		# FYI: We're skipping the 'tags' field for now; more on that later.
 
