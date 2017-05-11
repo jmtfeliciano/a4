@@ -13,9 +13,12 @@ class CreateClassificationsTable extends Migration
      */
     public function up()
     {
-         Schema::create('planets', function (Blueprint $table) {
+         Schema::create('classifications', function (Blueprint $table) {
 
-             
+             $table->increments('id');
+             $table->timestamps();
+             $table->string('name');
+
 
         });
     }
@@ -27,6 +30,6 @@ class CreateClassificationsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('classifications');
     }
 }
