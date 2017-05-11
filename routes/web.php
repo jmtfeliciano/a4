@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'NavigationController@index');
+Route::get('/view', 'ViewController@index');
 
 
 
@@ -19,7 +20,7 @@ Route::get('/test', 'TestController@index');
 
 
 
-if(App::environment('local')) {
+
 
     Route::get('/drop', function() {
 
@@ -31,7 +32,7 @@ if(App::environment('local')) {
         return 'Dropped '.$db.'; created '.$db.'.';
     });
 
-};
+
 
 
 

@@ -19,7 +19,7 @@
           </a>
 
           <a href="/create">
-               <button type="button" class="btn btn-success btn-block">Create and New Planetary Data</button>
+               <button type="button" class="btn btn-success btn-block">Create New Planetary Data</button>
           </a>
 
           <a href="/edit">
