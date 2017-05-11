@@ -17,12 +17,14 @@ class PlanetsTableSeeder extends Seeder
                'created_at' => Carbon\Carbon::now()->toDateTimeString(),
                'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
                'name' => 'Earth',
+               'mass' => 2,
           ]);
 
           Planet::insert([
                'created_at' => Carbon\Carbon::now()->toDateTimeString(),
                'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-               'name' => 'Mercury',
+               'name' => 'Mars',
+               'mass' => 4,
           ]);
     }
 }
