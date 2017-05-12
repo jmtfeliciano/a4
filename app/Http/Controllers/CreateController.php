@@ -22,6 +22,7 @@ class CreateController extends Controller
            $planet->galaxies_name = $request->galaxyName;
            $planet->save();
 
+
            return redirect('/view');
 
      }

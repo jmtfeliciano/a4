@@ -21,13 +21,16 @@ Route::get('/create', 'CreateController@index');
 
 Route::post('/submit', 'CreateController@submit');
 
+Route::get('/edit', 'EditController@index');
+
+Route::get('/delete', 'DeleteController@index');
+
+Route::post('/todelete', 'DeleteController@searchAndDelete');
 
 
 
-Route::get('/test', 'TestController@index');
 
-
-
+/* Deactivated -- only here for debugging
 if(App::environment('local')) {
 
     Route::get('/drop', function() {
@@ -39,8 +42,7 @@ if(App::environment('local')) {
 
         return 'Dropped '.$db.'; created '.$db.'.';
     });
-
-};
+}; */
 
 
 
