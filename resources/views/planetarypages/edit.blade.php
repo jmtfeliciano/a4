@@ -6,6 +6,7 @@
 
 @section('content')
 
-     <h2>My project can't unfortunately edit data :(  Only read, add, and delete</h2><br>
+     <h2>My project can't unfortunately edit data :(  Only read, add, and delete  </h2><br>
+
 
 @endsection
